@@ -10,4 +10,5 @@ def index(request):
 def about_(request_2):
     about = About.objects.latest("id")
     awards = Awards.objects.all()
+    main = Main.objects.latest('id')
     return render(request_2, 'about.html', locals())

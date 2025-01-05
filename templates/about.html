@@ -62,8 +62,8 @@
                 <!-- Logo -->
                 <div id="logo" class="hide-ball">
                     <a class="ajax-link" data-type="page-transition" href="index.html">
-                        <img class="black-logo" src="images/logo.png" alt="ClaPat Logo">
-                        <img class="white-logo" src="images/logo-white.png" alt="ClaPat Logo">
+                        <img class="black-logo" src="{{main.logo.url}}" alt="ClaPat Logo">
+                        <img class="white-logo" src="{{main.logo.url}}" alt="ClaPat Logo">
                     </a>
                 </div>
                 <!--/Logo -->
@@ -134,9 +134,9 @@
                         <div id="hero-styles">
                             <div id="hero-caption" class="content-full-width parallax-scroll-caption text-align-center height-title">
                                 <div class="inner">                                    
-                                    <h1 class="hero-title caption-timeline primary-font-title"><span>{{main.description}}</span></h1>
+                                    <h1 class="hero-title caption-timeline primary-font-title"><span>{{about.title}}</span></h1>
                                     <div class="hero-subtitle caption-timeline">
-                                    	<span>WE ARE A CREATIVE STUDIO, SPECIALIZED IN STRATEGY, BRANDING <br class="destroy"> DESIGN, AND DEVELOPMENT. OUR WORK IS ALWAYS AT THE INTERSECTION <br class="destroy"> OF DESIGN AND TECHNOLOGY.</span>
+                                    	<span>{{about.description}}<br class="destroy">{{about.description_2}}<br class="destroy">{{about.description_3}}</span>
                                     </div>                                   
                                 </div>
                             </div>
@@ -176,7 +176,7 @@
                                             <img src="images/about.jpg" alt="Image Title">
                                             <div class="content-video-wrapper">
                                                 <video loop muted playsinline class="bgvid">
-                                                    <source src="images/about.mp4" type="video/mp4">
+                                                    <source src="{{about.video.url}}" type="video/mp4">
                                                 </video>
                                             </div>
                                             <div class="clipped-image-gradient"></div>

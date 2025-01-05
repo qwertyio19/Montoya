@@ -80,7 +80,17 @@ class About(models.Model):
     )
 
     description = models.TextField(
-        verbose_name="Описание"
+        verbose_name="Первое описание"
+    )
+
+    description_2 = models.TextField(
+        default="Default value",
+        verbose_name="Второе описание"
+    )
+
+    description_3 = models.TextField(
+        default="Default value",
+        verbose_name="Третья описание"
     )
 
     video = models.FileField(
